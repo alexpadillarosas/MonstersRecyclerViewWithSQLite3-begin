@@ -50,6 +50,7 @@ public class MonsterViewHolder extends RecyclerView.ViewHolder {
 //        https://www.concretepage.com/questions/413
 //        Put images in drawable folder not assets folder. Assets folder is used to keep other types of file like pdf, js, txt, etc, preferable zipped
 
+
 //        This is the reason why is better to use xml instead of png files
 //        https://medium.com/the-android-guy/stop-using-pngs-use-vector-drawable-why-8ca68bed5335
 
@@ -84,7 +85,7 @@ public class MonsterViewHolder extends RecyclerView.ViewHolder {
             }
         });
 
-
     }
+
 
 }
