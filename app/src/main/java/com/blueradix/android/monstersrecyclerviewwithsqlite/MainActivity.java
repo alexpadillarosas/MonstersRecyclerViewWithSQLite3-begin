@@ -33,7 +33,7 @@ import static com.blueradix.android.monstersrecyclerviewwithsqlite.entities.Cons
  */
 
 /** TODO:    Add a splash screen
- *      1) create a theme for your splash screen in styles.xml
+ *      1) create a theme for your splash screen in styles.xml: be aware it should not have action bar in the current theme:  NoActionBar
  *      2) add it to your AndroidManifest.xml
  *      3) in MainActitivy.java restore the old theme, otherwise you will see the splash screen as a background image
  */
@@ -141,7 +141,7 @@ public class MainActivity extends AppCompatActivity implements OnMonsterListener
                 boolean result = monsterDataService.rateMonster(id, stars);
                 //find the monster in the list
                 int position = adapter.getMonsters().indexOf(monster);
-                if(position > 0){
+                if(position >= 0){
                     monster = monsterDataService.getMonster(id);
                     adapter.replaceItem(position, monster);
                 }
