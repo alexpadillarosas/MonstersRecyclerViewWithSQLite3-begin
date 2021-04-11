@@ -25,7 +25,7 @@ public class MonsterViewHolder extends RecyclerView.ViewHolder {
     public final TextView monsterNameEditText;
     public final TextView monsterDescriptionEditText;
     public final TextView monsterTotalVotesTextView;
-    public RatingBar ratingBar = null;
+    public RatingBar ratingBar;
     public Button actionButton1;
 
     private OnMonsterListener onMonsterListener;
@@ -63,6 +63,10 @@ public class MonsterViewHolder extends RecyclerView.ViewHolder {
         this.monsterNameEditText.setText(monster.getName());
         this.monsterDescriptionEditText.setText(monster.getDescription());
         this.monsterTotalVotesTextView.setText(monster.getVotes() + " Votes");
+
+        Log.i("booo", "total stars: " + monster.getStars());
+        Log.i("booo", "total votes: " + monster.getVotes());
+
         float rate;
         if(monster.getVotes() > 0){
             rate = 1.0f * monster.getStars() / monster.getVotes();
@@ -70,6 +74,7 @@ public class MonsterViewHolder extends RecyclerView.ViewHolder {
             rate = 0.0f;
         }
         this.ratingBar.setRating(rate);
+        Log.i("booo", "rate: " + rate);
     }
 
     /**

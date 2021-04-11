@@ -3,7 +3,8 @@ In this Project we will add Internationalisation, Splash screen and set material
 
 
 ## TODO:   Add a listener of each button inside the recyclerView
- *      1) modify the ViewHolder, add the listener inside of the bind method
+ *      1) modify the ViewHolder, add a button listener inside of the bind method
+ *      2) use a Snackbar to display the name of the monster when this button is clicked / tapped
 
 ## TODO:    Add a splash screen
  *      1) create a theme for your splash screen in styles.xml
@@ -22,6 +23,11 @@ In this Project we will add Internationalisation, Splash screen and set material
 
 ## TODO:  Internationalisation
  *      1) Remove all hardcoded text in the app, create a key for every text in strings.xml
+    *      there will be some cases where you want to pass parameters to the text defined in strings.xml ie:
+        *              <string name="my_welcome_messages">Welcome, %1$s! You have %2$d new notifications.</string>
+        *              where
+            *                  %1 and %2 are the possitions of the parameters
+            *                  $s, $d are the datatypes expected for each parameter
  *      2) right click on the file -> Open Translation Editor
     *          click the globe icon
     *          select thelanguage you want to translate the file to
