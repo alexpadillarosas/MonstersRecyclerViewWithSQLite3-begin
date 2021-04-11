@@ -58,11 +58,14 @@ import static com.blueradix.android.monstersrecyclerviewwithsqlite.entities.Cons
  *              where
  *                  %1 and %2 are the positions of the parameters
  *                  $s, $d are the data types expected for each parameter
+ *              In code you should call it in this way:
+ *                  rootView.getContext().getString(R.string.view_holder_monster_votes_label_value, monster.getVotes())
  *      2) right click on the file -> Open Translation Editor, click the globe icon, select the
  *          language you want to translate the file to, and fill up the translations
  *      3) Finally change the language of your device to test the internationalisation:
- *          settings -> Language & Input -> Language
+ *          settings -> Language & Input -> Languages
  *          and set the new language for your device.
+ *          Drag it to the first position, go back to your app, and the first language in that list should be immediately used for the device.
  *          Run your app and check the new language of your app
  */
 

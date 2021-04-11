@@ -28,7 +28,8 @@ In this Project we will add Internationalisation, Splash screen and set material
         *              where
             *                  %1 and %2 are the possitions of the parameters
             *                  $s, $d are the datatypes expected for each parameter
- *      2) right click on the file -> Open Translation Editor
+        *               In code you should call it in this way:
+            *                  rootView.getContext().getString(R.string.view_holder_monster_votes_label_value, monster.getVotes()) *      2) right click on the file -> Open Translation Editor
     *          click the globe icon
     *          select thelanguage you want to translate the file to
     *          fill up the translations
