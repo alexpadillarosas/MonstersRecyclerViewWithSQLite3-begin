@@ -36,7 +36,7 @@ import static com.blueradix.android.monstersrecyclerviewwithsqlite.entities.Cons
 /* TODO:    Add a splash screen
  *      1) create a theme for your splash screen in styles.xml: be aware it should not have action bar in the current theme:  NoActionBar
  *      2) add it to your AndroidManifest.xml
- *      3) in MainActitivy.java restore the old theme, otherwise you will see the splash screen as a background image
+ *      3) in MainActivity.java restore the old theme, otherwise you will see the splash screen as a background image
  */
 
 /*
