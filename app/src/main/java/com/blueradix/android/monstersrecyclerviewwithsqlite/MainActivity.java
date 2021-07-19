@@ -29,7 +29,7 @@ import static com.blueradix.android.monstersrecyclerviewwithsqlite.entities.Cons
 import static com.blueradix.android.monstersrecyclerviewwithsqlite.entities.Constants.VIEW_DETAILS_ACTIVITY_CODE;
 
 /* TODO:   Add a listener of each button inside the recyclerView
- *      1) modify the ViewHolder, add the listener inside of the bind method
+ *      1) modify the ViewHolder, add the actionButton1 listener inside of the bind method
  *      2) use a Snackbar to display the name of the monster when this button is clicked / tapped
  */
 
